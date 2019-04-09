@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Gang Calculator</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+    </head>
+    <body>
+        <header></header>
+        <div id="app">
+            <table class="brdr">
+                <tr><td colspan="3"><input class="txrgt btwn" type="text" v-model="tecleado"></td></tr>
+                <tr><td colspan="3"><input class="txrgt tmn_txt" type="text" v-model="raiz"></td></tr>
+                <tr><td @click="oprs('+')"><button class="btwn">+</button></td><td @click="oprs()"><button class="btwn">/</button></td><td @click="oprs('^(1/2)')"><button class="btwn">√</button></td></tr>
+                <tr><td @click="oprs()"><button class="btwn">-</button></td><td @click="oprs()"><button class="btwn">X</button></td><td @click="oprs()"><button class="btwn">C</button></td></tr>
+                <tr><td @click="nums(7)"><button class="btwn">7</button></td><td @click="nums(8)"><button class="btwn">8</button></td><td @click="nums(9)"><button class="btwn">9</button></td></tr>
+                <tr><td @click="nums(4)"><button class="btwn">4</button></td><td @click="nums(5)"><button class="btwn">5</button></td><td @click="nums(6)"><button class="btwn">6</button></td></tr>
+                <tr><td @click="nums(1)"><button class="btwn">1</button></td><td @click="nums(2)"><button class="btwn">2</button></td><td @click="nums(3)"><button class="btwn">3</button></td></tr>
+                <tr><td @click="nums(0)"colspan="2"><button class="btwn">0</button></td><td @click=""><button class="btwn">=</button></td></tr>
+            </table>
+        </div>
+        <footer></footer>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src="counter.js"></script>
+</html>

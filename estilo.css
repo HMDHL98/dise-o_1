@@ -1,0 +1,27 @@
+.flexy{
+    display: flex;
+}
+.txrgt{
+    text-align: right;
+}
+.noBrd{
+    border: 0;
+}
+.tmn_txt{
+    height: 40px;
+    width: 100%;
+    font-size: 15px;
+}
+.btwn{
+    align-items: space-between;
+    width: 100%;
+    height: 25px;
+}
+.contra{
+    margin: 0 auto;
+}
+.brdr{
+    border: 2px;
+    border-color: black;
+}
+
